@@ -62,13 +62,13 @@ CONTACT             CUSTOMER            hibernate_sequence
 
 ## Testing API using Postman
 - Create Customer
-[!API Post Message Testing](images/postman_post_message.png)
+![API Post Message Testing](images/postman_post_message.png)
 
 - Get all Customer
-[!API GET all](images/get_all.png)
+![API GET all](images/get_all.png)
 
 - Get by ID
-[!API By ID](images/get_by_id.png)
+![API By ID](images/get_by_id.png)
 
 ## Angular project
 Installation
