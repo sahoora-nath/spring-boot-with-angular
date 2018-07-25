@@ -168,3 +168,33 @@ Now we need to configure the `proxy.conf.json` file in 'package.json' as follows
   "e2e": "ng e2e"
 }
 ```
+
+## Creating Service using Angular CLI
+You can create customer component using angular cli with the following command.
+Go to customer-ui folder in your terminal
+```console
+$ ng g service services/customer
+CREATE src/app/services/customer.service.spec.ts (386 bytes)
+CREATE src/app/services/customer.service.ts (137 bytes)
+```
+- Next just add the CustomerService in app.module.ts under providers[].
+
+## Creating Admin Component using Angular CLI
+```console
+$ ng g component component/admin
+CREATE src/app/component/admin/admin.component.css (0 bytes)
+CREATE src/app/component/admin/admin.component.spec.ts (621 bytes)
+CREATE src/app/component/admin/admin.component.ts (279 bytes)
+UPDATE src/app/app.module.ts (559 bytes)
+```
+
+Then create a home component as follows:
+```console
+npm install bootstrap --save
+npm install @angular-devkit/core --save
+```
+
+## Adding Security using Auth0
+Auth0 provides authentication and authorization as a service.
+The benefit of Auth0 is explained in the following link.
+https://auth0.com/docs/getting-started/overview

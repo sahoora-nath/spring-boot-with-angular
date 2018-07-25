@@ -1,0 +1,20 @@
+<div class="container">
+    <table class="table table-bordered table-inverse">
+      <tr>
+        <th>Customer Name</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+      <tr *ngFor="let customer of customers">
+        <td>
+          <a [routerLink]="['/admin/view', customer.id]">{{customer.firstName}}  {{customer.lastName}}</a>
+        </td>
+        <td>
+          {{customer.email}}
+        </td>
+        <td>
+          {{customer.contactDetail.address1}}
+        </td>
+      </tr>
+    </table>
+  </div>
